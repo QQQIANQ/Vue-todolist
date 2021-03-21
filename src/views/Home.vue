@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <TodosComponent> Todos </TodosComponent>
+    <TodoListComponent> Todos </TodoListComponent>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import {Background} from '../directives/background.directive'
-import TodosComponent from '../components/todos.vue'
+import TodoListComponent from '../components/todoList.vue'
 
 
 @Component({
   components: {
-    TodosComponent
+    TodoListComponent
   },
   directives:{
     Background
